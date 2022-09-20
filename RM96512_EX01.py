@@ -1,7 +1,6 @@
 value = float(input('Qual foi o seu faturamento em R$ '))
-subscribe = input('Qual é o seu nivel de assinatura: BASIC, SILVER, GOLD ou PLATINUM ').upper()
+subscribe = input('Qual é a sua categoria: BASIC, SILVER, GOLD ou PLATINUM ').upper()
 
-# basicValue = 0.30
 
 BASIC = value * 0.30
 SILVER = value * 0.20
@@ -16,3 +15,5 @@ elif subscribe == "GOLD":
     print(f"A taxa total a ser paga é de R${GOLD: .2f}")
 elif subscribe == "PLATINUM":
     print(f"A taxa total a ser paga é de R${PLATINUM: .2f}")
+else:
+    print("Por favor, digite uma categoria que exista")
